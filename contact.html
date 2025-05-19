@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+<style>
+  .nav-item a {
+    color: black;
+  }
+
+  ul li {
+    margin-left: 35px;
+    font-size: 20px;
+
+    font-weight: bold;
+  }
+
+  #hw {
+    color: black;
+  }
+
+  #hw:hover {
+    color: lightseagreen;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1030;
+    /* Bootstrap मधला default आहे */
+  }
+
+  .carousel-caption {
+    left: 0;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #sbtn {
+    padding: 20px;
+
+    border: 2px solid black;
+    border-radius: 8px;
+  }
+
+  #rbtn {
+    padding: 20px;
+
+    border: 2px solid black;
+    border-radius: 8px;
+  }
+
+  #sbtn:hover {
+    background-color: red;
+    color: white;
+  }
+
+  #rbtn:hover {
+    background-color: green;
+    color: white;
+  }
+
+  #sakshu {
+    transition: transform 0.3s ease;
+    background-color: blanchedalmond;
+  }
+
+  #sakshu:hover {
+    transform: scaley(1.2);
+    background-color: lightseagreen;
+    color: white;
+  }
+
+  #nadim {
+    color: lightseagreen;
+  }
+
+  .card:hover #nadim {
+    color: white;
+
+  }
+
+
+  #inner_box:hover #prama {
+    transform: scale(1.3);
+  }
+
+
+  #inner_box:hover .my_span {
+    display: block;
+  }
+
+
+  #inner_box {
+
+    float: left;
+
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  #prama {
+    transition: 5s;
+  }
+
+  .my_span {
+    height: 80px;
+    width: 170px;
+    background-color: white;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+
+    bottom: 20px;
+    right: 30px;
+    z-index: 1111;
+    display: none;
+  }
+
+  #sp1_btn {
+    background-color: lightseagreen;
+    color: white;
+  }
+
+  #sp2_btn {
+    background-color: lightseagreen;
+    color: white;
+  }
+
+  #sp1_btn:hover {
+    background-color: green;
+    color: yellow;
+  }
+
+  #sp2_btn:hover {
+    background-color: red;
+    color: yellow;
+  }
+
+  #india {
+    background-color: lightgoldenrodyellow;
+    ;
+    height: 50px;
+    position: relative;
+    top: 230px;
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+
+
+  }
+
+  #india i {
+    background-color: lightseagreen;
+    padding: 8px;
+    width: 40px;
+    position: relative;
+    top: -256px;
+    color: white;
+    border-radius: 5px;
+    font-size: 23px;
+    border: 1px solid white;
+  }
+
+  #india i:hover {
+    background-color: red;
+    color: yellow;
+  }
+
+  #pa {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  #ap {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    padding: 9px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+  #ap:hover {
+    background-color: white;
+    color: lightseagreen;
+  }
+
+  #end {
+    margin-left: 30px;
+    color: white;
+    border-right: 1px solid white;
+  }
+
+  #sakshu1 {
+        padding: 5px 20px;
+        background-color: lightseagreen;
+        border-radius: 8px;
+        border: 1px solid black;
+        color: white;
+    }
+
+    #sakshu1:hover {
+        background-color: rgba(236, 85, 178, 0.5);;
+        color: red;
+    }
+
+  #ram {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+
+
+  form {
+    /* width: 50%; */
+    /* margin: auto; */
+    background-color: rgb(220, 149, 19);
+    color: white;
+    padding: 10px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    font-size: 20px;
+    /* margin-top: 10px; */
+  }
+
+  #t1,
+  #t2,
+  #t3,
+  #t4,
+  #t5 {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  #pramabtn {
+    /* padding: 7px; */
+    /* width: 120px; */
+    /* margin-left: 200px; */
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+  }
+
+  #pramabtn:hover {
+    background-color: red;
+    color: yellow;
+  }
+   #drop{
+    color: black;
+    font-weight: bold;
+  }
+
+  #drop:hover {
+    color: white;
+    background-color: black;
+  }
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" id="z">
+      <a class="navbar-brand" href="#"> <i class="fa fa-book me-5 h1"
+          style="color: lightseagreen;font-size: 70px; margin-left: 30px;"></i>
+        <a class="navbar-brand " href="#" id="hw"
+          style="font-size: 40px;color: lightseagreen; font-weight: bold; margin-left: 30px; margin-top: -15px;">eLEARNING</a></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll text-white" style="font-size: 20px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html" id="hw">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" id="hw">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html" id="hw">Courses</a>
+          </li>
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="hw"
+              style="margin-left: 30px; margin-top: 5px; font-size: 20px;font-weight: bold; ">
+              Pages
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="our_team.html"  id="drop">Our Team</a></li>
+              <li><a class="dropdown-item" href="testimonial.html"  id="drop">Testimonial</a></li>
+              <li><a class="dropdown-item" href="page.html"  id="drop">404 Page</a></li>
+            </ul>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" id="hw">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="join.html" id="hw"><input type="submit" value="Join Now →" id="sakshu1"></a>
+          </li>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+   <section title="carocel_img">
+        <div class="container-fluid">
+            <div class="row  " style="height: 200px;margin-top: 80px; ">
+                <div class="col-md-12" style="background-color: rgba(220, 116, 18, 0.5);height: 400px;">
+
+
+
+
+                    <img src="img/carousel-1.jpg" class="d-block " alt="..."
+                        style="height: 100%;width: 100%;opacity: 0.5;">
+
+                    <h1
+                        style="font-size: 70px;font-weight: bold; text-shadow: 0px 0px 5px black;margin-top: -200px; text-align: center; color: white;">
+                        Contact</h1>
+                    <center>
+                        <b style="text-align: center;"><a href=""
+                                style="text-decoration: none; color: white; font-size: 25px; text-shadow: 0px 0px 5px black;">Home
+                                / </a><a href=""
+                                style="text-decoration: none; color: white; font-size: 25px; text-shadow: 0px 0px 5px black;">Pages
+                                /
+                            </a><a href=""
+                                style="text-decoration: none; color: white; font-size: 25px; text-shadow: 0px 0px 5px black;">
+                                Contact </a></b>
+                    </center>
+                     </div>
+            </div>
+
+    </section>
+
+
+
+
+
+
+  <section title="Categories">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-md-12 text-center" style="margin-top: 200px;">
+          <br><br><br><br>
+          <div style="height: 2px; width: 60px; background-color: lightseagreen; margin: 0 auto;"></div>
+          <div style="height: 2px; width: 100px; background-color: lightseagreen; margin: 10px auto;"></div>
+          <h3 style="color: lightseagreen;">Contact</h3>
+          <div style="height: 2px; width: 60px; background-color: lightseagreen; margin: 10px auto;"></div>
+          <div style="height: 2px; width: 100px; background-color: lightseagreen; margin: 10px auto;"></div>
+          <h1>Contact For Any Querry</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section title="form">
+    <div class="container-fluid">
+      <div class="row p-5">
+        <div class="col-md-4 p-3">
+          <h3>Get In Touch</h3>
+          <p class="h5">The contact form is currently inactive. Get a functional and working contact form with Ajax &
+            PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <i
+              style="color: lightseagreen;"> Download Now.</i></p>
+          <i class="fa fa-map-marker" id="ram" style="padding: 14px 19px;background-color: lightseagreen;"></i>
+          <a href="" id="ram" style="color: lightseagreen;position: relative;top: -15px;">Mobile</a><br>
+          <a href="" id="ram" style="margin-left:50px;position: relative;top: -28px;">123 Street, New York, USA</a><br>
+
+
+          <i class="fa fa-phone" id="ram" style="padding: 14px 19px;background-color: lightseagreen;"></i>
+          <a href="" id="ram" style="color: lightseagreen;position: relative;top: -15px;">Phone</a><br>
+          <a href="" id="ram" style="margin-left:60px;position: relative;top: -28px;">+012 345 67890</a><br>
+
+          <i class="fa fa-envelope" id="ram" style="padding: 14px 19px;background-color: lightseagreen;"></i>
+          <a href="" id="ram" style="color: lightseagreen;position: relative;top: -15px;">Email</a><br>
+          <a href="" id="ram" style="margin-left:60px;position: relative;top: -28px;">info@example.com</a><br>
+
+
+        </div>
+        <div class="col-md-4 p-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30315.583652096317!2d73.4243343581589!3d18.235275160177675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be8283fbeddbbc5%3A0x342b856a05fca0af!2sRaigad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1747108308863!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <div class="col-md-4 " >
+          <form>
+             <fieldset class="border p-4 rounded">
+            <legend style="text-align: center;font-size: 20px; font-weight: bold; ">Login Form</legend>
+
+            <label>Enter Username:</label>
+            <input type="text" id="t1" class="formcontrol"><br>
+
+            <label>Enter Password:</label>
+            <input type="password" id="t2" class="formcontrol"><br>
+
+            <label>Enter Confirm Password:</label>
+            <input type="password" id="t3" class="formcontrol"><br>
+
+            <label>Enter Age:</label>
+            <input type="text" id="t4" class="formcontrol"><br>
+
+            <label>Enter Contact No:</label>
+            <input type="number" id="t5" class="formcontrol"><br><br>
+
+            <input type="button" value="Submit" onclick="validation()" class="formcontrol" id="pramabtn">
+            <br><br>
+            <span id="s1" style="color: red;"></span>
+            </fieldset>
+          </form>
+
+          <script>
+            function validation() {
+              let username = document.getElementById("t1").value.trim();
+
+              let pwd = document.getElementById("t2").value;
+              let cpwd = document.getElementById("t3").value;
+              let age = document.getElementById("t4").value;
+              let contact = document.getElementById("t5").value;
+              let r = "";
+
+              if (username.length == 0) {
+                r += "Username should not be empty<br>";
+              }
+              if (username.length < 3 || username.length > 7) {
+                r += "Username atleast must be 3-7 characters <br>"
+              }
+              if (pwd.length == 0) {
+                r += "Password should not be empty<br>"
+              }
+
+              if (pwd.length < 4 || pwd.length > 6) {
+                r += "Password must be at least 4-6 characters<br>";
+              }
+              if (cpwd.length == 0) {
+                r += "Confirm Password should not be empty<br>"
+              }
+
+
+              if (pwd !== cpwd) {
+                r += "Passwords do not match<br>";
+              }
+              if (age.length == 0) {
+                r += "Age should not be empty<br>"
+              }
+
+              if (parseInt(age) < 18 || parseInt(age) > 25) {
+                r += "Age should be between 18 and 25<br>";
+              }
+              if (contact.length == 0) {
+                r += "contact should not be empty<br>"
+              }
+              if (contact.length < 10) {
+                r += "contact shold be 10 digits"
+              }
+
+
+
+              if (r.length > 0) {
+                document.getElementById("s1").innerHTML = r;
+              } //else {
+              //     document.getElementById("s1").innerHTML = "Form submitted successfully!";
+
+              // }
+              else {
+                alert("Form submitted sucessfully...!!!")
+              }
+
+            }
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <section title="end">
+    <div class="container-fluid">
+      <div class="row bg-dark">
+        <div class="col-md-3 p-5">
+          <h2 class="text-white">Quick Link</h2><br>
+          <i class="fa fa-angle-right" id="pa"></i>
+          <a href="" id="pa">About Us</a><br>
+
+          <i class="fa fa-angle-right" id="pa"></i>
+          <a href="" id="pa">Contact Us</a><br>
+
+          <i class="fa fa-angle-right" id="pa"></i>
+          <a href="" id="pa">Privacy Policy</a><br>
+
+          <i class="fa fa-angle-right" id="pa"></i>
+          <a href="" id="pa">Terms & Condition</a><br>
+
+          <i class="fa fa-angle-right" id="pa"></i>
+          <a href="" id="pa">FAQS & Helps</a>
+
+        </div>
+
+        <div class="col-md-3 p-4"><br>
+          <h2 class="text-white">Contact</h2><br>
+          <i class="fa fa-map-marker" id="pa"></i>
+          <a href="" id="pa">123 Street, New York, USA</a><br><br>
+          <i class="fa fa-phone " id="pa"></i>
+          <a href="" id="pa">+012 345 67890</a><br><br>
+          <i class="fa fa-envelope" id="pa"></i>
+          <a href="" id="pa">info@example.com</a><br><br>
+
+          <b><i class="fa fa-twitter" id="ap"></i>
+            <i class="fa fa-facebook" id="ap"></i>
+            <i class="fa fa-youtube" id="ap"></i>
+            <i class="fa fa-linkedin" id="ap"></i>
+          </b>
+        </div>
+
+
+
+        <div class="col-md-3 p-3"><br>
+          <h2 class="text-white text-center">Gallary</h2>
+          <div class="row">
+            <div class="col-md-4 mt-3"><br>
+              <img src="img/course-1.jpg" height="100%" width="100%" alt="">
+            </div>
+            <div class="col-md-4 mt-3"><br>
+              <img src="img/course-2.jpg" height="100%" width="100%" alt="">
+            </div>
+            <div class="col-md-4 mt-3"><br>
+              <img src="img/course-3.jpg" height="100%" width="100%" alt="">
+            </div>
+            <div class="col-md-4 mt-5">
+              <img src="img/course-2.jpg" height="100%" width="100%" alt="">
+            </div>
+            <div class="col-md-4 mt-5">
+              <img src="img/course-3.jpg" height="100%" width="100%" alt="">
+            </div>
+            <div class="col-md-4 mt-5">
+              <img src="img/course-1.jpg" height="100%" width="100%" alt="">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 p-4"><br>
+          <h2 class="text-white">NewsLetter</h2><br>
+          <p class="text-white">Dolor amet sit justo amet <br> elitr clita ipsum elitr est.</p>
+
+          <div class="btn-group">
+            
+              <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" id="rbtn">
+             <a href="join.html">  <input type="submit" value="submit" id="rbtn"></a>
+
+              <!-- <a href="#" class="btn btn-info">Sign Up</a> -->
+
+            
+
+          </div>
+        </div>
+        <hr style="color: white;">
+      </div>
+    </div>
+  </section>
+  <section title="end">
+    <div class="container-fluid">
+      <div class="row bg-dark p-5">
+        <div class="col-md-6 mt-2">
+          <b class="text-white"> ©<a href="" class="text-warning"> Your Site Name</a>, All Right Reserved. Designed By
+            <a href="" class="text-warning">Pramod Pathade</a></b>
+        </div>
+        <div class="offset-2 col-md-4 mt-2">
+          <a href="" id="end">Home &nbsp;<b style="border-right: 1px solid white;"></b></a>
+          <a href="" id="end">Cookies &nbsp;<b style="border-right: 1px solid white;"></b></a>
+          <a href="" id="end">Help &nbsp;<b style="border-right: 1px solid white;"></b></a>
+          <a href="" id="end">FAQs &nbsp;<b style="border-right: 1px solid white;"></b></a>
+
+        </div>
+      </div>
+    </div>
+  </section><br><br>
+
+
+</body>
+
+
+</html>
