@@ -5,266 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+   <link rel="shortcut icon" href="img/np.jpg" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </head>
-<style>
-  .nav-item a {
-    color: black;
-  }
 
-  ul li {
-    margin-left: 35px;
-    font-size: 20px;
-
-    font-weight: bold;
-  }
-
-  #hw {
-    color: black;
-  }
-
-  #hw:hover {
-    color: lightseagreen;
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 1030;
-    /* Bootstrap मधला default आहे */
-  }
-
-  .carousel-caption {
-    left: 0;
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  #sbtn {
-    padding: 20px;
-
-    border: 2px solid black;
-    border-radius: 8px;
-  }
-
-  #rbtn {
-    padding: 20px;
-
-    border: 2px solid black;
-    border-radius: 8px;
-  }
-
-  #sbtn:hover {
-    background-color: red;
-    color: white;
-  }
-
-  #rbtn:hover {
-    background-color: green;
-    color: white;
-  }
-
-  #sakshu {
-    transition: transform 0.3s ease;
-    background-color: blanchedalmond;
-  }
-
-  #sakshu:hover {
-    transform: scaley(1.2);
-    background-color: lightseagreen;
-    color: white;
-  }
-
-  #nadim {
-    color: lightseagreen;
-  }
-
-  .card:hover #nadim {
-    color: white;
-
-  }
-
-
-  #inner_box:hover #prama {
-    transform: scale(1.3);
-  }
-
-
-  #inner_box:hover .my_span {
-    display: block;
-  }
-
-
-  #inner_box {
-
-    float: left;
-
-    overflow: hidden;
-    position: relative;
-  }
-
-
-  #prama {
-    transition: 5s;
-  }
-
-  .my_span {
-    height: 80px;
-    width: 170px;
-    background-color: white;
-    display: inline-block;
-    color: black;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-
-    bottom: 20px;
-    right: 30px;
-    z-index: 1111;
-    display: none;
-  }
-
-  #sp1_btn {
-    background-color: lightseagreen;
-    color: white;
-  }
-
-  #sp2_btn {
-    background-color: lightseagreen;
-    color: white;
-  }
-
-  #sp1_btn:hover {
-    background-color: green;
-    color: yellow;
-  }
-
-  #sp2_btn:hover {
-    background-color: red;
-    color: yellow;
-  }
-
-  #india {
-    background-color: lightgoldenrodyellow;
-    ;
-    height: 50px;
-    position: relative;
-    top: 230px;
-    width: 150px;
-    margin: auto;
-    padding: 10px;
-
-
-  }
-
-  #india i {
-    background-color: lightseagreen;
-    padding: 8px;
-    width: 40px;
-    position: relative;
-    top: -256px;
-    color: white;
-    border-radius: 5px;
-    font-size: 23px;
-    border: 1px solid white;
-  }
-
-  #india i:hover {
-    background-color: red;
-    color: yellow;
-  }
-
-  #pa {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-  }
-
-  #ap {
-    font-size: 17px;
-    font-weight: bold;
-    color: white;
-    padding: 9px;
-    border: 1px solid white;
-    border-radius: 50%;
-  }
-
-  #ap:hover {
-    background-color: white;
-    color: lightseagreen;
-  }
-
-  #end {
-    margin-left: 30px;
-    color: white;
-    border-right: 1px solid white;
-  }
-
-  #sakshu1 {
-        padding: 5px 20px;
-        background-color: lightseagreen;
-        border-radius: 8px;
-        border: 1px solid black;
-        color: white;
-    }
-
-    #sakshu1:hover {
-        background-color: rgba(236, 85, 178, 0.5);;
-        color: red;
-    }
-
-
-  #drop {
-    color: black;
-    font-weight: bold;
-  }
-
-  #drop:hover {
-    color: white;
-    background-color: black;
-  }
-  #lbtn{
-    padding: 20px;
-    background-color: red;
-  }
-  #lbtn:hover{
-    background-color: lightseagreen;
-    color: white;
-  }
-  #btn {
-  background-color: white;
-  color: black;
-  border: 2px solid lightseagreen;
-  padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#btn:hover {
-  background-color: lightseagreen;
-  color: white;
-}
-</style>
 
 <body>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" id="z">
-      <a class="navbar-brand" href="#"> <i class="fa fa-book me-5 h1"
-          style="color: lightseagreen;font-size: 70px; margin-left: 30px;"></i>
+      <a class="navbar-brand" href="#"> <i class="fa fa-book me-5 h1" style="color: lightseagreen;font-size: 70px; margin-left: 10px;"></i>
         <a class="navbar-brand " href="#" id="hw"
-          style="font-size: 40px;color: lightseagreen; font-weight: bold; margin-left: 30px; margin-top: -15px;">eLEARNING</a></a>
+          style="font-size: 40px;color: lightseagreen; font-weight: bold;margin-top: -15px;">eLEARNING</a></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -273,7 +31,7 @@
 
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll text-white" style="font-size: 20px;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="home.html" id="hw">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html" id="hw">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html" id="hw">About</a>
@@ -287,215 +45,228 @@
               Pages
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="our_team.html" id="drop">Our Team</a></li>
-              <li><a class="dropdown-item" href="testimonial.html" id="drop">Testimonial</a></li>
-              <li><a class="dropdown-item" href="page.html" id="drop">404 Page</a></li>
+              <li><a class="dropdown-item" href="our_team.html"  id="drop">Our Team</a></li>
+              <li><a class="dropdown-item" href="testimonial.html"  id="drop">Testimonial</a></li>
+              <li><a class="dropdown-item" href="page.html"  id="drop">404 Page</a></li>
             </ul>
-
           </div>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html" id="hw">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="join.html" id="hw"><input type="submit" value="Join Now →" id="sakshu1"></a>
-          </li>
+        <li class="nav-item">
+  <a class="nav-link" href="contact.html" id="hw">Contact</a>
+</li>
+
+
+<li class="nav-item ms-2"> <!-- 👈 instead of ms-3 or ms-4 -->
+  <a class="nav-link" href="Order.html" id="hw">
+    <button type="button" class="btn btn-warning"  id="sakshu1">Order Now</button>
+     </a>
+</li>
+
+
+
+      <!-- Show Order with Badge -->
+      <a class="nav-link" href="show-order.html" id="hw" style="position: relative; font-size: 18px;">
+        <button type="button" class="btn position-relative btn-warning" id="sakshu1">
+          Orders
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white fw-bold"
+            id="orderCount" style="font-weight: bold;">
+            0
+            <span class="visually-hidden">total orders</span>
+          </span>
+        </button>
+      </a>
+
+          
 
       </div>
     </div>
   </nav>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const orders = JSON.parse(localStorage.getItem("bookOrders")) || [];
+    const orderCount = orders.length > 99 ? "99+" : orders.length;
+    document.getElementById("orderCount").textContent = orderCount;
+  });
+</script>
 
 
 
 
 
 
-
-
-
-  <section title="carocel_img">
-    <div class="container-fluid">
-      <div class="row  " style="height: 250px;margin-top: 100px; ">
-        <div class="col-md-12" style="background-color: rgba(220, 116, 18, 0.5);">
-          <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/carousel-1.jpg" class="d-block w-100" alt="..."
-                  style="height: 500px;opacity: 0.5;width: 100%;">
-                <div class="carousel-caption  d-md-block">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-6 col-12">
-                        <h3 style="color: white; font-weight: bold;text-shadow: 0px 0px 5px black;">Best Online Courses
-                        </h3>
-                        <p
-                          style="font-size: 40px;font-weight: bold; color: white;text-shadow: 0px 0px 5px white ;text-shadow: 0px 0px 5px black ;">
-                          The Best Online <br>Learning
-                          Platform</p>
-                        <p style="font-size: 20px;">Vero elitr clita lorem. ipsum color at slet sit diam no. Kasd rebum
-                          <br>ipsum et diam justo
-                          clista et kasd reburn sea sanctus eirmod elitr.</p>
-
-                        <a href="#"><input type="submit" value="Read more" id="sbtn" style="margin-left: 80px;"></a>
-                        <a href="#"><input type="submit" value="Join Now" id="rbtn"></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/carousel-2.jpg" class="d-block w-100" alt="..."
-                  style="height: 500px;opacity: 0.5;width: 100%;">
-                <div class="carousel-caption  d-md-block">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-6 col-12">
-                        <h3 style="color: white; font-weight: bold;text-shadow: 0px 0px 5px black;">Best Online Courses
-                        </h3>
-                        <p
-                          style="font-size: 40px;font-weight: bold; color: white;text-shadow: 0px 0px 5px white ;text-shadow: 0px 0px 5px black ;">
-                          Get Educated Online <br>From Your
-                          Home</p>
-                        <p style="font-size: 20px;">Vero elitr clita lorem. ipsum color at slet sit diam no. Kasd rebum
-                          <br>ipsum et diam justo
-                          clista et kasd reburn sea sanctus eirmod elitr.</p>
-
-                        <a href="#"><input type="submit" value="Read more" id="sbtn" style="margin-left: 80px;"></a>
-                        <a href="#"><input type="submit" value="Join Now" id="rbtn"></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+ <section title="carocel_img">
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-12 p-0" style="background-color: rgba(220, 116, 18, 0.5);">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img src="img/carousel-1.jpg" class="d-block w-100" alt="..." style="height: auto; max-height: 500px; object-fit: cover; filter: brightness(50%);">
+
+              <div class="carousel-caption d-md-block text-center text-md-start px-3 px-md-5" style="bottom: 20px;">
+                <h2 class="text-white fw-bold display-6 display-md-4">Best Online Courses</h2>
+                <p class="fw-bold text-white fs-6 fs-md-5 mb-2">
+                  The Best Online <br class="d-none d-md-block">Learning Platform
+                </p>
+                <p class="text-white d-none d-sm-block" style="font-size: 14px;">
+                  Vero elitr clita lorem. Color at slet sit diam no. <br class="d-none d-md-block">
+                  Kasd rebum ipsum et diam justo clista et kasd reburn sea sanctus eirmod elitr.
+                </p>
+                <div class="mt-2 d-flex justify-content-center justify-content-md-start gap-2 flex-wrap">
+                  <a href="#"><button class="btn btn-light px-3 py-2 fw-bold" id="sbtn">Read More</button></a>
+                  <a href="#"><button class="btn btn-warning px-3 py-2 fw-bold" id="rbtn">Join Now</button></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="img/carousel-2.jpg" class="d-block w-100" alt="..." style="height: auto; max-height: 500px; object-fit: cover; filter: brightness(50%);">
+
+              <div class="carousel-caption d-md-block text-center text-md-start px-3 px-md-5" style="bottom: 20px;">
+                 
+                <h2 class="text-white fw-bold display-6 display-md-4">Get Educated Online <br> From Home</h2>
+                <p class="fw-bold text-white fs-6 fs-md-5 mb-2">
+                  Learn at your pace <br class="d-none d-md-block">From Anywhere
+                </p>
+                <p class="text-white d-none d-sm-block" style="font-size: 14px;">
+                  Access top courses and instructors globally. <br class="d-none d-md-block">
+                  Study from home and grow your career.
+                </p>
+                <div class="mt-2 d-flex justify-content-center justify-content-md-start gap-2 flex-wrap">
+                  <a href="#"><button class="btn btn-light px-3 py-2 fw-bold" id="sbtn">Read More</button></a>
+                  <a href="#"><button class="btn btn-warning px-3 py-2 fw-bold" id="rbtn">Join Now</button></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
 
-  <section title="card">
-    <div class="container">
-      <div class="row p-3" style="margin-top: 270px;">
-        <div class="col-md-3 col-6" style="margin-top: 45px;">
-          <div class="card p-3" id="sakshu">
-            <div class="header p-3">
-              <center> <i class="fa fa-4x fa-graduation-cap  mb-4" id="nadim"></i></center>
-              <h6 class="text-center">Skilled Instructure</h6>
-              <p style="margin-left: 10px;">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-            </div>
+
+ <section title="card" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6 col-12 mt-5">
+        <div class="card h-100 text-center p-3 shadow-sm" id="sakshu">
+          <i class="fa fa-4x fa-graduation-cap mb-3 " id="nadim"></i>
+          <h5>Skilled Instructors</h5>
+          <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6 col-12 mt-5">
+        <div class="card h-100 text-center p-3 shadow-sm" id="sakshu">
+          <i class="fa fa-4x fa-globe mb-3" id="nadim"></i>
+          <h5>Online Classes</h5>
+          <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6 col-12 mt-5">
+        <div class="card h-100 text-center p-3 shadow-sm"  id="sakshu">
+          <i class="fa fa-4x fa-home mb-3 " id="nadim"></i>
+          <h5>Home Projects</h5>
+          <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6 col-12 mt-5">
+        <div class="card h-100 text-center p-3 shadow-sm"  id="sakshu">
+          <i class="fa fa-4x fa-book mb-3 " id="nadim"></i>
+          <h5>Book Library</h5>
+          <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <section title="about_us" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image Section -->
+      <div class="col-md-6 col-12 mb-4 mb-md-0 text-center">
+        <img src="img/about.jpg" class="img-fluid w-75" alt="About Image">
+      </div>
+
+      <!-- Text Content Section -->
+      <div class="col-md-6 col-12">
+        <div class="text-center text-md-start mb-3">
+          <hr style="height: 2px; width: 60px; background-color: blue; display: inline-block; margin-bottom: 8px;">
+          <h4 style="color: lightseagreen; display: inline;">About Us</h4>
+          <hr style="height: 2px; width: 100px; background-color: blue; display: inline-block; margin-left: 10px;margin-bottom: 8px;">
+        </div>
+        <h2 class="fw-bold">Welcome to eLEARNING</h2>
+        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+
+        <!-- Features List -->
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p><i class="fa fa-arrow-right me-2 text-success"></i>Skilled Instructors</p>
+            <p><i class="fa fa-arrow-right me-2 text-success"></i>International Certificate</p>
+            <p><i class="fa fa-arrow-right me-2 text-success"></i>Online Classes</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <p><i class="fa fa-arrow-right me-2 text-success"></i>Online Classes</p>
+            <p><i class="fa fa-arrow-right me-2 text-success"></i>Skilled Instructors</p>
+            <p><i class="fa fa-arrow-right me-2 text-success"></i>International Certificate</p>
           </div>
         </div>
 
-        <div class="col-md-3 col-6" style="margin-top: 45px;">
-          <div class="card p-3" id="sakshu">
-            <div class="header p-3">
-              <center> <i class="fa fa-4x fa-globe  mb-4" id="nadim"></i></center>
-              <h5 class="text-center">Online Classes</h5>
-              <p style="margin-left: 10px;">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6" style="margin-top: 45px;">
-          <div class="card p-3" id="sakshu">
-            <div class="header p-3">
-              <center> <i class="fa fa-4x fa-home  mb-4" id="nadim"></i></center>
-              <h5 class="text-center">Home projects</h5>
-              <p style="margin-left: 10px;">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6  " style="margin-top: 45px;">
-          <div class="card p-3 " id="sakshu">
-            <div class="header p-3">
-              <center> <i class="fa fa-4x fa-book mb-4" id="nadim"></i></center>
-              <h5 class="text-center">Book library</h5>
-              <p style="margin-left: 10px;">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-            </div>
-          </div>
+        <!-- Read More Button -->
+        <div class="mt-3 text-center text-md-start">
+          <a href="#"><button id="rbtn">Read More</button></a>
         </div>
       </div>
     </div>
-  </section><br><br>
-
-
-
-  <section title="about_us">
-    <div class="container">
-      <div class="row" >
-        <div class="col-md-6 col-6 ">
-          <img src="img/about.jpg" height="100%" width="90%" alt="">
-        </div>
-
-        <div class="col-md-6 col-6 ">
-          <hr style="height: 2px; width: 60px; background-color: blue; position: relative;left: 120px; top: 25px;">
-          <h4 style="color: lightseagreen; ">About Us</h4>
-          <hr style="height: 2px; width: 100px; background-color: blue; position: relative;left: 120px; top: -22px;">
-          <h1>Welcome to eLEARNING</h1>
-          <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum
-            et lorem et sit.</p>
-          <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum
-            et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-<div class="row">
-            <div class="col-md-6 col-6"><br>
-              <i class="fa fa-arrow-right me-2" style="color: lightseagreen;"><b
-                  style="color: black; margin-left: 10px;">Skilled Instructors</b></i><br><br>
-              <i class="fa fa-arrow-right me-2" style="color: lightseagreen;"><b
-                  style="color: black; margin-left: 10px;">International Certificate</b></i><br><br>
-              <i class="fa fa-arrow-right me-2" style="color: lightseagreen;"><b
-                  style="color: black; margin-left: 10px;">Online Classes</b></i><br><br>
-            </div>
-            <div class="col-md-6 col-6 "><br>
-              <i class="fa fa-arrow-right me-2" style="color: lightseagreen;"><b
-                  style="color: black; margin-left: 10px;">Online Classes</b></i><br><br>
-              <i class="fa fa-arrow-right me-2" style="color: lightseagreen;"><b
-                  style="color: black; margin-left: 10px;">Skilled Instructors</b></i><br><br>
-              <i class="fa fa-arrow-right me-2" style="color: lightseagreen;"><b
-                  style="color: black; margin-left: 10px;">International Certificate</b></i><br><br>
-                   <a href="#"><input type="submit" value="Read More" id="rbtn"></a>
-            </div><br> 
-          </div> 
-          </div> 
-          </div> 
-          </div>
-           </section> 
-          
+  </div>
+</section>
 
 
 
 
 
 
-          
-        
- 
 
   <section title="Categories">
     <div class="container-fluid">
       <div class="row " style="margin-top: 100px;">
         <div class="col-md-12 text-center">
-         
+
           <div style="height: 2px; width: 60px; background-color: lightseagreen; margin: 0 auto;"></div>
           <div style="height: 2px; width: 100px; background-color: lightseagreen; margin: 10px auto;"></div>
           <h3 style="color: lightseagreen;">Categories</h3>
@@ -726,89 +497,97 @@
   </section>
 
 
-  <section title="card">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-6 mt-2">
+  
 
-          <div class="body" id="inner_box">
-            <img src="/img/team-1.jpg" height="100%" width="100%" alt="" id="prama">
-          </div>
 
-          <div class="card-body text-center" style="background-color: lightgoldenrodyellow;">
-            <div id="india">
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-twitter"></i>
-              <i class="fa fa-instagram"></i>
-            </div>
-            <div style="margin-top: 250px;">
-              <h4>Instructure Name</h4>
-              <address class="h6">Destination</address><br>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-md-3 col-6 mt-2">
 
-          <div class="body" id="inner_box">
-            <img src="/img/team-2.jpg" height="100%" width="100%" alt="" id="prama">
-          </div>
 
-          <div class="card-body text-center" style="background-color: lightgoldenrodyellow;">
-            <div id="india">
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-twitter"></i>
-              <i class="fa fa-instagram"></i>
-            </div>
-            <div style="margin-top: 250px;">
-              <h4>Instructure Name</h4>
-              <address class="h6">Destination</address><br>
+ <section title="card" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Single Card -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="card team-card text-center">
+          <div class="team-img position-relative">
+            <img src="/img/team-1.jpg" class="img-fluid w-100" alt="Instructor">
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-3 col-6 mt-2">
-
-          <div class="body" id="inner_box">
-            <img src="/img/team-3.jpg" height="100%" width="100%" alt="" id="prama">
-          </div>
-
-          <div class="card-body text-center" style="background-color: lightgoldenrodyellow;">
-            <div id="india">
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-twitter"></i>
-              <i class="fa fa-instagram"></i>
-            </div>
-            <div style="margin-top: 250px;">
-              <h4>Instructure Name</h4>
-              <address class="h6">Destination</address><br>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6 mt-2">
-
-          <div class="body" id="inner_box">
-            <img src="/img/team-4.jpg" height="100%" width="100%" alt="" id="prama">
-          </div>
-
-          <div class="card-body text-center" style="background-color: lightgoldenrodyellow;">
-            <div id="india">
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-twitter"></i>
-              <i class="fa fa-instagram"></i>
-            </div>
-            <div style="margin-top: 250px;">
-              <h4>Instructure Name</h4>
-              <address class="h6">Destination</address><br>
-            </div>
+          <div class="card-body bg-warning-subtle">
+            <h5>Instructor Name</h5>
+            <p class="text-muted">Designation</p>
           </div>
         </div>
       </div>
-    </div><br>
-  </section>
 
 
+
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="card team-card text-center">
+          <div class="team-img position-relative">
+            <img src="/img/team-4.jpg" class="img-fluid w-100" alt="Instructor">
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="card-body bg-warning-subtle">
+            <h5>Instructor Name</h5>
+            <p class="text-muted">Designation</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="card team-card text-center">
+          <div class="team-img position-relative">
+            <img src="/img/team-2.jpg" class="img-fluid w-100" alt="Instructor">
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="card-body bg-warning-subtle">
+            <h5>Instructor Name</h5>
+            <p class="text-muted">Designation</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="card team-card text-center">
+          <div class="team-img position-relative">
+            <img src="/img/team-3.jpg" class="img-fluid w-100" alt="Instructor">
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="card-body bg-warning-subtle">
+            <h5>Instructor Name</h5>
+            <p class="text-muted">Designation</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    
+
+    </div>
+  </div>
+</section>
 
   <section title="testimonial">
     <div class="container-fluid">
@@ -851,7 +630,7 @@
               <div class="carousel-item active" data-bs-interval="10000">
 
                 <div class="row">
-                  <div class="col-md-4 mt-3">
+                  <div class="col-md-4 mt-3 d-md-block d-none">
                     <div class="">
                       <div class="card-header p-2"
                         style="height: 120px;width: 120px; margin: auto; border-radius: 50%; border: 1px solid black;">
@@ -882,7 +661,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 mt-3">
+                  <div class="col-md-4 mt-3 d-md-block d-none">
                     <div class="">
                       <div class="card-header p-2"
                         style="height: 120px;width: 120px; margin: auto; border-radius: 50%; border: 1px solid black;">
@@ -906,7 +685,7 @@
 
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col-md-4 mt-3">
+                  <div class="col-md-4 mt-3 d-md-block d-none">
                     <div class="">
                       <div class="card-header p-2"
                         style="height: 120px;width: 120px; margin: auto; border-radius: 50%; border: 1px solid black;">
@@ -937,7 +716,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 mt-3">
+                  <div class="col-md-4 mt-3 d-md-block d-none">
                     <div class="">
                       <div class="card-header p-2"
                         style="height: 120px;width: 120px; margin: auto; border-radius: 50%; border: 1px solid black;">
@@ -959,7 +738,7 @@
 
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col-md-4 mt-3">
+                  <div class="col-md-4 mt-3 d-md-block d-none">
                     <div class="">
                       <div class="card-header p-2"
                         style="height: 120px;width: 120px; margin: auto; border-radius: 50%; border: 1px solid black;">
@@ -990,7 +769,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 mt-3">
+                  <div class="col-md-4 mt-3 d-md-block d-none">
                     <div class="">
                       <div class="card-header p-2"
                         style="height: 120px;width: 120px; margin: auto; border-radius: 50%; border: 1px solid black;">
@@ -1012,7 +791,7 @@
 
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col-md-4 mt-3">
+                  <div class="col-md-4 mt-3 d-md-block d-none">
                     <div class="">
                       <div class="card-header p-2"
                         style="height: 120px;width: 120px; margin: auto; border-radius: 50%; border: 1px solid black;">
@@ -1043,7 +822,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 mt-3">
+                  <div class="col-md-4 mt-3 d-md-block d-none">
                     <div class="">
                       <div class="card-header p-2"
                         style="height: 120px;width: 120px; margin: auto; border-radius: 50%; border: 1px solid black;">
@@ -1081,106 +860,87 @@
 
 
   <section title="end">
-    <div class="container-fluid">
-      <div class="row bg-dark">
-        <div class="col-md-3 p-5">
-          <h2 class="text-white">Quick Link</h2><br>
-          <i class="fa fa-angle-right" id="pa"></i>
-          <a href="" id="pa">About Us</a><br>
+  <div class="container-fluid">
+    <div class="row bg-dark text-white p-4">
 
-          <i class="fa fa-angle-right" id="pa"></i>
-          <a href="" id="pa">Contact Us</a><br>
+      <!-- Quick Link -->
+      <div class="col-lg-3 col-md-6 col-12 mb-4">
+        <h2>Quick Link</h2><br>
+        <p><i class="fa fa-angle-right" id="pa"></i> <a href="" id="pa" class="text-white text-decoration-none ms-2">About Us</a></p>
+        <p><i class="fa fa-angle-right" id="pa"></i> <a href="" id="pa" class="text-white text-decoration-none ms-2">Contact Us</a></p>
+        <p><i class="fa fa-angle-right" id="pa"></i> <a href="" id="pa" class="text-white text-decoration-none ms-2">Privacy Policy</a></p>
+        <p><i class="fa fa-angle-right" id="pa"></i> <a href="" id="pa" class="text-white text-decoration-none ms-2">Terms & Condition</a></p>
+        <p><i class="fa fa-angle-right" id="pa"></i> <a href="" id="pa" class="text-white text-decoration-none ms-2">FAQS & Helps</a></p>
+      </div>
 
-          <i class="fa fa-angle-right" id="pa"></i>
-          <a href="" id="pa">Privacy Policy</a><br>
-
-          <i class="fa fa-angle-right" id="pa"></i>
-          <a href="" id="pa">Terms & Condition</a><br>
-
-          <i class="fa fa-angle-right" id="pa"></i>
-          <a href="" id="pa">FAQS & Helps</a>
-
-        </div>
-
-        <div class="col-md-3 p-4"><br>
-          <h2 class="text-white">Contact</h2><br>
-          <i class="fa fa-map-marker" id="pa"></i>
-          <a href="" id="pa">123 Street, New York, USA</a><br><br>
-          <i class="fa fa-phone " id="pa"></i>
-          <a href="" id="pa">+012 345 67890</a><br><br>
-          <i class="fa fa-envelope" id="pa"></i>
-          <a href="" id="pa">info@example.com</a><br><br>
-
-          <b><i class="fa fa-twitter" id="ap"></i>
-            <i class="fa fa-facebook" id="ap"></i>
-            <i class="fa fa-youtube" id="ap"></i>
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6 col-12 mb-4">
+        <h2>Contact</h2><br>
+        <p><i class="fa fa-map-marker" id="pa"></i> <a href="" id="pa" class="text-white text-decoration-none ms-2">123 Street, New York, USA</a></p>
+        <p><i class="fa fa-phone" id="pa"></i> <a href="" id="pa" class="text-white text-decoration-none ms-2">+012 345 67890</a></p>
+        <p><i class="fa fa-envelope" id="pa"></i> <a href="" id="pa" class="text-white text-decoration-none ms-2">info@example.com</a></p>
+        <div class="mt-3">
+          <b>
+            <i class="fa fa-twitter me-3" id="ap"></i>
+            <i class="fa fa-facebook me-3" id="ap"></i>
+            <i class="fa fa-youtube me-3" id="ap"></i>
             <i class="fa fa-linkedin" id="ap"></i>
           </b>
         </div>
-
-
-
-        <div class="col-md-3 p-3"><br>
-          <h2 class="text-white text-center">Gallary</h2>
-          <div class="row">
-            <div class="col-md-4 mt-3"><br>
-              <img src="img/course-1.jpg" height="100%" width="100%" alt="">
-            </div>
-            <div class="col-md-4 mt-3"><br>
-              <img src="img/course-2.jpg" height="100%" width="100%" alt="">
-            </div>
-            <div class="col-md-4 mt-3"><br>
-              <img src="img/course-3.jpg" height="100%" width="100%" alt="">
-            </div>
-            <div class="col-md-4 mt-5">
-              <img src="img/course-2.jpg" height="100%" width="100%" alt="">
-            </div>
-            <div class="col-md-4 mt-5">
-              <img src="img/course-3.jpg" height="100%" width="100%" alt="">
-            </div>
-            <div class="col-md-4 mt-5">
-              <img src="img/course-1.jpg" height="100%" width="100%" alt="">
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-3 p-4"><br>
-          <h2 class="text-white">NewsLetter</h2><br>
-          <p class="text-white">Dolor amet sit justo amet <br> elitr clita ipsum elitr est.</p>
-
-          <div class="btn-group">
-
-            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" id="rbtn">
-           <a href="join.html">  <input type="submit" value="submit" id="rbtn"></a>
-
-            <!-- <a href="#" class="btn btn-info">Sign Up</a> -->
-
-
-
-          </div>
-        </div>
-        <hr style="color: white;">
       </div>
-    </div>
-  </section>
-  <section title="end">
-    <div class="container-fluid">
-      <div class="row bg-dark p-5">
-        <div class="col-md-6 mt-2">
-          <b class="text-white"> ©<a href="" class="text-warning"> Your Site Name</a>, All Right Reserved. Designed By
-            <a href="" class="text-warning">Pramod Pathade</a></b>
-        </div>
-        <div class="offset-2 col-md-4 mt-2">
-          <a href="" id="end">Home &nbsp;<b style="border-right: 1px solid white;"></b></a>
-          <a href="" id="end">Cookies &nbsp;<b style="border-right: 1px solid white;"></b></a>
-          <a href="" id="end">Help &nbsp;<b style="border-right: 1px solid white;"></b></a>
-          <a href="" id="end">FAQs &nbsp;<b style="border-right: 1px solid white;"></b></a>
 
+      <!-- Gallery -->
+      <div class="col-lg-3 col-md-6 col-12 mb-4">
+        <h2 class="text-center">Gallery</h2>
+        <div class="row g-2">
+          <div class="col-4"><img src="img/course-1.jpg" class="img-fluid" alt=""></div>
+          <div class="col-4"><img src="img/course-2.jpg" class="img-fluid" alt=""></div>
+          <div class="col-4"><img src="img/course-3.jpg" class="img-fluid" alt=""></div>
+          <div class="col-4"><img src="img/course-2.jpg" class="img-fluid" alt=""></div>
+          <div class="col-4"><img src="img/course-3.jpg" class="img-fluid" alt=""></div>
+          <div class="col-4"><img src="img/course-1.jpg" class="img-fluid" alt=""></div>
         </div>
       </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6 col-12 mb-4">
+        <h2>Newsletter</h2><br>
+        <p>Dolor amet sit justo amet <br> elitr clita ipsum elitr est.</p>
+        <div class="d-flex flex-column gap-2">
+          <input class="form-control border-0 py-2 px-3" type="text" placeholder="Your email" id="rbtn">
+          <a href="join.html">
+            <input type="submit" value="Submit" id="rbtn" class="btn btn-warning">
+          </a>
+        </div>
+      </div>
+       <hr>
+
     </div>
-  </section><br><br>
+   
+  </div>
+</section>
+
+
+  <div class="container-fluid">
+    <div class="row bg-dark text-white p-4 text-center text-md-start">
+
+      <!-- Left Content -->
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <b>© <a href="#" class="text-warning text-decoration-none">Your Site Name</a>, All Rights Reserved.<br>
+          Designed By <a href="#" class="text-warning text-decoration-none">Pramod Pathade</a></b>
+      </div>
+
+      <!-- Right Links -->
+      <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end flex-wrap gap-3">
+        <a href="#" class="text-white text-decoration-none border-end pe-2">Home</a>
+        <a href="#" class="text-white text-decoration-none border-end pe-2">Cookies</a>
+        <a href="#" class="text-white text-decoration-none border-end pe-2">Help</a>
+        <a href="#" class="text-white text-decoration-none">FAQs</a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 </body>

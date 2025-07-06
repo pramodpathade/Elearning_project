@@ -2,31 +2,34 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="shortcut icon" href="img/np.jpg" type="image/x-icon">
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/np.jpg" type="image/x-icon">
 
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    
+
+   
 </head>
 
 
 <body>
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" id="z">
-      <a class="navbar-brand" href="#"> <i class="fa fa-book me-5 h1"
-          style="color: lightseagreen;font-size: 70px; margin-left: 10px;"></i>
+      <a class="navbar-brand" href="#"> <i class="fa fa-book me-5 h1" style="color: lightseagreen;font-size: 70px; margin-left: 10px;"></i>
         <a class="navbar-brand " href="#" id="hw"
-          style="font-size: 40px;color: lightseagreen; font-weight: bold; margin-top: -15px;">eLEARNING</a></a>
+          style="font-size: 40px;color: lightseagreen; font-weight: bold;margin-top: -15px;">eLEARNING</a></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,7 +57,7 @@
               <li><a class="dropdown-item" href="page.html"  id="drop">404 Page</a></li>
             </ul>
           </div>
-         <li class="nav-item">
+        <li class="nav-item">
   <a class="nav-link" href="contact.html" id="hw">Contact</a>
 </li>
 
@@ -79,11 +82,13 @@
         </button>
       </a>
 
+          
+          
 
       </div>
     </div>
   </nav>
-  <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const orders = JSON.parse(localStorage.getItem("bookOrders")) || [];
     const orderCount = orders.length > 99 ? "99+" : orders.length;
@@ -99,7 +104,11 @@
 
 
 
-   <section title="carocel_img">
+
+
+
+
+    <section title="carocel_img">
         <div class="container-fluid">
             <div class="row  " style="height: 200px; ">
                 <div class="col-md-12" style="background-color: rgba(220, 116, 18, 0.5);height: 400px;">
@@ -112,7 +121,7 @@
 
                     <h1
                         style="font-size: 70px;font-weight: bold; text-shadow: 0px 0px 5px black;margin-top: -200px; text-align: center; color: white;">
-                        Contact</h1>
+                        Order Now Books</h1>
                     <center>
                         <b style="text-align: center;"><a href=""
                                 style="text-decoration: none; color: white; font-size: 25px; text-shadow: 0px 0px 5px black;">Home
@@ -121,172 +130,154 @@
                                 /
                             </a><a href=""
                                 style="text-decoration: none; color: white; font-size: 25px; text-shadow: 0px 0px 5px black;">
-                                Contact </a></b>
+                                Order Now Books </a></b>
                     </center>
-                     </div>
+                </div>
             </div>
+        </div>
 
-    </section>
-
-
-
+    </section><br><br>
 
 
+ <div class="container" style="margin-top: 200px;">
+  <div class="row">
+    <div class="col-md-12 mt-5">
+      <form onsubmit="return saveBookOrder();" id="bookOrderForm"
+        style="background-color: #cf961b; padding: 30px; border-radius: 15px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1);">
 
-  <!-- Contact Heading Section -->
-<section title="Categories">
-  <div class="container-fluid" style="margin-top: 100px;">
-    <div class="row">
-      <div class="col-md-12 text-center" style="margin-top: 200px;">
-        <div style="height: 2px; width: 60px; background-color: lightseagreen; margin: 0 auto;"></div>
-        <div style="height: 2px; width: 100px; background-color: lightseagreen; margin: 10px auto;"></div>
-        <h3 style="color: lightseagreen;">Contact</h3>
-        <div style="height: 2px; width: 60px; background-color: lightseagreen; margin: 10px auto;"></div>
-        <div style="height: 2px; width: 100px; background-color: lightseagreen; margin: 10px auto;"></div>
-        <h1>Contact For Any Query</h1>
-      </div>
-    </div>
-  </div>
-</section>
+        <h2 class="text-center mb-4 " style="color: #c20d91; font-weight: bold;">Book Order Now</h2>
 
-<!-- Main Contact Section -->
-<section title="form">
-  <div class="container-fluid">
-    <div class="row p-5">
+        <input type="text" id="name" class="form-control mb-3" placeholder="Enter Your Name" required>
+        <input type="email" id="email" class="form-control mb-3" placeholder="Enter Your Email" required>
+        <input type="password" id="password" class="form-control mb-3" placeholder="Create Password (min 6 chars & includes'@')" required>
 
-      <!-- Contact Info -->
-      <div class="col-md-4 p-3">
-        <h3>Get In Touch</h3>
-        <p class="h5">
-          The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes.
-          Just copy and paste the files, add a little code and you're done. 
-          <i style="color: lightseagreen;">Download Now.</i>
-        </p>
+        <select id="bookSelect" class="form-control mb-3" required>
+          <option value="">-- Select Book --</option>
+          <option>Learn HTML & CSS</option>
+          <option>JavaScript Essentials</option>
+          <option>Mastering Photoshop</option>
+          <option>UI/UX Design Guide</option>
+          <option>Illustrator for Beginners</option>
+        </select>
+        
+        <input type="number" id="quantity" class="form-control mb-3" placeholder="Enter Quantity" required>
 
-        <p>
-          <i class="fa fa-map-marker" id="ram" style="padding: 14px 19px; background-color: lightseagreen;"></i>
-          <span style="color: lightseagreen; position: relative; top: -15px;">Mobile</span><br>
-          <span style="margin-left: 50px; position: relative; top: -28px;">123 Street, New York, USA</span>
-        </p>
+        <input type="date" id="deliveryDate" class="form-control mb-3" required>
+          <input type="text" id="address" class="form-control mb-3" placeholder="Enter Delivery City Address"  required>
 
-        <p>
-          <i class="fa fa-phone" id="ram" style="padding: 14px 19px; background-color: lightseagreen;"></i>
-          <span style="color: lightseagreen; position: relative; top: -15px;">Phone</span><br>
-          <span style="margin-left: 60px; position: relative; top: -28px;">+012 345 67890</span>
-        </p>
+       
 
-        <p>
-          <i class="fa fa-envelope" id="ram" style="padding: 14px 19px; background-color: lightseagreen;"></i>
-          <span style="color: lightseagreen; position: relative; top: -15px;">Email</span><br>
-          <span style="margin-left: 60px; position: relative; top: -28px;">info@example.com</span>
-        </p>
-      </div>
+        <select id="paymentMethod" class="form-control mb-3" required>
+          <option value="">-- Select Payment Method --</option>
+          <option>UPI</option>
+          <option>Cash On Delivery</option>
+          <option>Credit/Debit Card</option>
+        </select>
 
-      <!-- Google Map -->
-      <div class="col-md-4 p-3">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30315.583652096317!2d73.4243343581589!3d18.235275160177675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be8283fbeddbbc5%3A0x342b856a05fca0af!2sRaigad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1747108308863!5m2!1sen!2sin"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
+        <div class="text-center">
+          <button type="submit" class=" px-4" id="pbtn">Order Now</button>
+        </div>
 
-      <!-- Login Form -->
-      <div class="col-md-4">
-        <form>
-          <fieldset class="border p-4 rounded">
-            <legend style="text-align: center; font-size: 20px; font-weight: bold;">Login Form</legend>
+        <p class="text-center mt-3" id="formMessage" style="font-weight: bold;"></p>
+      </form>
+    
 
-            <label>Enter Username:</label>
-            <input type="text" id="t1" class="form-control"><br>
-
-            <label>Enter Password:</label>
-            <input type="password" id="t2" class="form-control"><br>
-
-            <label>Enter Confirm Password:</label>
-            <input type="password" id="t3" class="form-control"><br>
-
-            <label>Enter Age:</label>
-            <input type="text" id="t4" class="form-control"><br>
-
-            <label>Enter Contact No:</label>
-            <input type="number" id="t5" class="form-control"><br><br>
-
-            <input type="button" value="Submit" onclick="validation()" class="form-control btn btn-success" id="pramabtn">
-            <br><br>
-            <span id="s1" style="color: red;"></span>
-          </fieldset>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- JS Validation Script -->
 <script>
-  function validation() {
-    let username = document.getElementById("t1").value.trim();
-    let pwd = document.getElementById("t2").value;
-    let cpwd = document.getElementById("t3").value;
-    let age = document.getElementById("t4").value;
-    let contact = document.getElementById("t5").value;
-    let r = "";
+  function saveBookOrder() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const book = document.getElementById("bookSelect").value;
+    const quantity = parseInt(document.getElementById("quantity").value);
+    const date = document.getElementById("deliveryDate").value;
+    const address = document.getElementById("address").value.trim();
+    const payment = document.getElementById("paymentMethod").value;
+    const msg = document.getElementById("formMessage");
 
-    if (username.length === 0) {
-      r += "Username should not be empty<br>";
-    } else if (username.length < 3 || username.length > 7) {
-      r += "Username must be between 3 to 7 characters<br>";
+    const today = new Date().toISOString().split("T")[0];
+
+    if (name.length < 3 || !/^[A-Za-z ]+$/.test(name)) {
+      msg.style.color = "red";
+      msg.textContent = "Please enter a valid name (min 3 letters).";
+      return false;
     }
 
-    if (pwd.length === 0) {
-      r += "Password should not be empty<br>";
-    } else if (pwd.length < 4 || pwd.length > 6) {
-      r += "Password must be 4 to 6 characters<br>";
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      msg.style.color = "red";
+      msg.textContent = "Please enter a valid email address.";
+      return false;
     }
 
-    if (cpwd.length === 0) {
-      r += "Confirm Password should not be empty<br>";
-    } else if (pwd !== cpwd) {
-      r += "Passwords do not match<br>";
+    if (password.length < 6 || !password.includes("@")) {
+      msg.style.color = "red";
+      msg.textContent = "Password must be at least 6 characters and contain '@' symbol.";
+      return false;
     }
 
-    if (age.length === 0) {
-      r += "Age should not be empty<br>";
-    } else if (parseInt(age) < 18 || parseInt(age) > 25) {
-      r += "Age must be between 18 and 25<br>";
+    if (book === "") {
+      msg.style.color = "red";
+      msg.textContent = "Please select a book.";
+      return false;
     }
 
-    if (contact.length === 0) {
-      r += "Contact should not be empty<br>";
-    } else if (contact.length !== 10) {
-      r += "Contact must be exactly 10 digits<br>";
+    if (isNaN(quantity) || quantity < 1) {
+      msg.style.color = "red";
+      msg.textContent = "Please enter a valid quantity.";
+      return false;
     }
 
-    document.getElementById("s1").innerHTML = r;
-
-    if (r.length === 0) {
-      alert("Form submitted successfully...!!!");
+    if (!date) {
+      msg.style.color = "red";
+      msg.textContent = "Please select a delivery date.";
+      return false;
     }
+
+    if (date < today) {
+      msg.style.color = "red";
+      msg.textContent = "Delivery date cannot be in the past.";
+      return false;
+    }
+
+    if (address.length < 3) {
+      msg.style.color = "red";
+      msg.textContent = "Please enter a valid delivery address.";
+      return false;
+    }
+
+    if (payment === "") {
+      msg.style.color = "red";
+      msg.textContent = "Please select a payment method.";
+      return false;
+    }
+
+    const data = { name, email, password, book, quantity, date, address, payment };
+    let orders = JSON.parse(localStorage.getItem("bookOrders")) || [];
+    orders.push(data);
+    localStorage.setItem("bookOrders", JSON.stringify(orders));
+
+    msg.style.color = "green";
+    msg.textContent = "Book order saved successfully!";
+
+    document.getElementById("bookOrderForm").reset();
+
+    setTimeout(() => {
+      alert("🎉 Your order was placed successfully!");
+      window.location.href = "show-order.html";
+    }, 1000);
+
+    return false;
   }
 </script>
 
 
+</div>
+  </div>
+</div><br><br><br>
 
 
 
-
-  </section>
-
-
-
-
-
-
-
-
-
- <section title="end">
+<section title="end">
   <div class="container-fluid">
     <div class="row bg-dark text-white p-4">
 
@@ -370,7 +361,7 @@
 </section>
 
 
- 
+
 
 </body>
 
